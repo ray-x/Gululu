@@ -1,0 +1,498 @@
+/*
+ Localizable.strings
+ Gululu
+ 
+ Created by Baker on 16/9/6.
+ Copyright © 2016年 Ray Xu. All rights reserved.
+ */
+//Common
+"Email" = "邮箱";
+"Parent's Email" = "邮箱";
+"Phone" = "手机号";
+"Next"  = "下一步";
+"Done" = "完成";
+"Cancel" = "取消";
+"Let's\rgo" = "开始";
+"OK" = "好的";
+"ON" = "开";
+"OFF" = "关";
+"Abort" = "放弃";
+"Continue" = "继续";
+"Yes" = "是的";
+"Finish" =  "完成";
+"Retry" = "重试";
+"Ninji" = "小忍";
+"Sansa" = "姗姗";
+"Purpie" = "胖紫";
+"Dnooy" = "逗泥";
+
+
+"Privacy Policy" = "隐私政策";
+"Contact Us" = "联系我们";
+"Setting" = "设置";
+"Disconnect" = "断开连接";
+"Connect" = "连接";
+"About" = "关于";
+"A" = "上";
+"P" = "下";
+"AM" = "上午";
+"PM" = "下午";
+"boy" = "男孩";
+"girl" = "女孩";
+"new" = "新";
+"mouth" = "月";
+"y.o" = "岁";
+"Why" = "为什么";
+"Choose" = "选择";
+"Choose Me" = "选我";
+"Search" = "搜索";
+"Agree" = "同意";
+"Reject" = "拒绝";
+"Share" = "分享";
+"Got it" = "知道了";
+"Enter" = "进入";
+"Join us" = "开始旅途";
+
+//Number
+"Zero" = "零";
+"One" = "一";
+"Two" = "二";
+"Three" = "三";
+"Four" = "四";
+"Five" = "五";
+"Six" = "六";
+"Seven" = "七";
+"Eight" = "八";
+"Nine" = "九";
+"To access, please press the number \"%@\" for 3 seconds." = "为确保您是家长，请按住数字 “%@” 3秒";
+"Please enter your birth year:" = "请输入当前App使用者的生日年份：";
+"We are sorry. You are not eligible to enter this page." = "实在抱歉，您现在还不符合进入这个页面的条件哦。";
+"I agree to the " = "我已经同意了";
+"Terms of Use" = "使用条款";
+" and " = "和";
+
+//Common
+"The connection to the server failed. Please try again later" = "连接服务器失败，请稍后重试";
+
+
+//AppDelegate.swift
+"Connected! Tap here to go back to Gululu." =  "已连接！点击回到 Gululu";
+"Slide to View" = "滑动查看";
+"Your account password may have been changed on another device. Please sign in again with the new password." = "您可能在其他设备上更换了密码，请使用新的密码重新登录。";
+"Oops..." = "啊哦...";
+
+//MainVC.swift
+"Pets" = "我的\r宠物";
+"Friends" = "我的\r朋友";
+"Today" = "今天";
+"7 Days" = "一周";
+
+//Active Email VC
+"Congratulations" = "恭喜";
+"Proceed" = "完成";
+"We have sent a welcome E-mail to" = "我们已经发送了一封激活邮件到：";
+"Please check your email to\rcomplete the account setup\rprocess." = "请检查您的邮箱\r并完成账号激活。";
+"Your account is not actived,\rPlease check your E-mail" = "您的账号还未激活，请前往邮箱激活。";
+"I haven't received the e-mail. " = "我还没收到邮件。";
+"Resend" = "重发邮件";
+"Avtived Email Send Success" = "激活邮件发送成功";
+"You've succesfully registered." = "账号注册成功！";
+
+//LoginVC.swift
+"Enter parent's email address to sign in or create an account." = "请输入邮箱，登录或创建账号";
+"You'll sign in with Parent's Email:" = "你将用此邮箱登录:";
+"You'll sign in with Phone:" = "你将用此手机号登录账户:";
+"Password" = "密码";
+"Sign\r in" = "登录";
+"Forget password?" = "忘记密码?";
+"By continuing, you agree to our " = "点击下一步，代表你已同意我们的";
+"Privacy Policy." = "隐私政策";
+"You'll create an account with Parent's Email:" = "你将用此邮箱创建账户:";
+"You'll create an account with Phone:" = "你将用此手机号创建账户:";
+"Sign\r up" = "注册";
+"Wrong parent's email address?" = "邮箱填错了?";
+"Wrong phone address?" = "手机号填错了?";
+"Your new password" = "输入新密码";
+"Please set your new password." = "请设置你的新密码";
+"Confirm" = "确认";
+"Now, type it again to confirm." = "请再输入一次";
+"The password is incorrect." = "两次输入的密码不一致";
+"Sing up failed,Please try again later." = "注册失败，请稍后重试.";
+"User phone login or regist" = "使用手机号登录或注册";
+"please input you phone number to login or regist,(just allow china phone number now)" = "请输入手机号，登录或创建账号（目前仅支持中国大陆手机号）";
+"User parent's email login or regist" = "使用邮箱登录或注册";
+"Get phone code error, do you want try again." = "手机获取验证码失败，您要重新获取吗？";
+"%d later get again" = "%d 秒后重新获取";
+"later get again" = "重新获取验证码";
+"CheckCode" = "验证码";
+"Please input you code" = "请输入收到的验证码";
+"      checkcode is wrong" = "      验证码不正确";
+"phone login/register" = "手机登录/注册";
+"parent's email login/register" = "邮箱登录/注册";
+"phone is illeagl" = "手机号格式不支持，请检查后再试";
+"limit server" = "短信发送频率过高，请稍后再试";
+"server error" = "服务器出错，请稍后再试";
+"Confirm the system settings agree that Gululu uses WLAN & Cellular Data" = "确认系统設置同意Gululu使用无线局域网与蜂窝移动数据";
+"- 1.Make sure the network connection is normal\r\n- 2.The server may be disconnected，Please contact customer service." = "- 1.确保网络连接正常\r\n- 2.服务器可能断开，请与客服人员联系。";
+"- 1.Make sure the network connection is normal\r\n- 2.Confirm the system settings agree that Gululu uses WLAN & Cellular Data\r\n- 3.The server may be disconnected，Please contact customer service." = "- 1.确保网络连接正常\r\n- 2.确认系统設置同意Gululu使用无线局域网与蜂窝移动数据\r\n- 3.服务器可能断开，请与客服人员联系。";
+"Go to setting" = "去设置";
+"Please check your internet connection." = "请检查你的网络链接.";
+"We're sorry! This feature is currently down.  Please check again later or contact customer service." = "修改密码功能正在维护，请稍后尝试，或联系客服。给您带来的不便我们深表歉意！";
+
+//VerifyCodeVC.swift
+"We've sent the security code to:" = "已将验证码发送至邮箱:";
+"We've sent the security code to phone:" = "已将验证码发送至手机号:";
+"Please enter the code you received to continue resetting your password." = "请在下方填入你收到的验证码";
+"Wait. that is a wrong parent's email address" = "邮箱填错了?";
+"It is incorrect." = " 验证码不正确";
+"%@\r%@\r Please check it and try agian." = "%@\r%@\r请在查看后重新输入";
+"You've tried too many times.\r We've sent a new verification code to:" = "抱歉，重试次数过多。\r我们已将新的验证码发送至邮箱:";
+"You've tried too many times.\r We've sent a new verification code to phone:" = "抱歉，重试次数过多。\r我们已将新的验证码发送至手机号:";
+"Get code failed, Please try again later." = "获取验证码失败，请稍候重试";
+"Please check it and try again." = "请在下方填入新的验证码";
+"      The password is incorrect." = "      密码不正确";
+"      Password doesn't match." = "      两次输入密码不一致";
+"Please try again later." = "稍后再试一次.";
+
+//NameVC.swift
+"You already have a child with this name." = "已有同名小孩，请更换其他名字";
+"What's your child's nickname?" = "怎么称呼你的孩子?";
+"Nickname"  = "名字或昵称";
+"Child name should not be nil" = "小孩名字不能为空";
+"Child name should not have emoji" = "小孩姓名不支持表情符号";
+"Alter name failed" = "修改小孩姓名失败";
+
+//RecommandVolumVC.swift
+"We recommend \n%@ drink" = "\n%@每天的喝水目标是:";
+"ml/day" = "ml/天";
+"oz/day" = "oz/天";
+"Child create failed" = "小孩创建失败";
+"Might be much lower than your child actually needs" = "Might be much lower than your child actually needs";
+"Minimum amount of water to your child's total fluid intake" = "Minimum amount of water to your child's total fluid intake";
+"For child with normal physical activity e.g. workouts 1-2 times a week" = "For child with normal physical activity e.g. workouts 1-2 times a week";
+"For child with mediun physical activity e.g. playing sports 2-3 times a week" = "For child with mediun physical activity e.g. playing sports 2-3 times a week";
+"For child with high physical activity e.g. sports everyday" = "For child with high physical activity e.g. sports everyday";
+"Only for child with special medical needs of higher amount of water intake" = "Only for child with special medical needs of higher amount of water intake";
+"Child update info failed" = "修改小孩信息失败";
+"Update child drink water failed" = "更新小孩推荐饮水量失败";
+
+//BirthdayVC.swift
+"When is %@'s birthday" = "%@的生日是哪一天?";
+"Alter birthday failed" = "修改生日失败";
+
+//PhotoSelVC.swift
+"Choose a photo for %@" = "帮%@选张照片吧!";
+"Choose\rphoto" = "选择\r照片";
+"Upload avator failed"= "上传头像失败";
+
+//ChoseAvatorVC
+"Please choose a profile photo." = "请选择一个喜欢的头像吧！";
+
+//SexSelVC.swift
+"What is %@'s gender?" = "%@是男孩还是女孩?";
+"Alter sex failed" = "修改性别失败";
+
+//WeightVC.swift
+"What is %@'s weight?" = "%@的体重是多少?";
+"Alter weight failed" = "修改体重失败";
+
+//IntroVC.swift
+"Set up Gululu for your child" = "开始设置 Gululu";
+"To get an accurate picture of your child's drinking activity, please tell us a few things about your child." = "为了能够科学评估推荐饮水量，我们需要一些关于您孩子的基本信息。";
+
+//PetSelectionVC.swift
+"Let %@\rchoose a pet!" = "快让%@\r来选萌宠!";
+"He has ninja powers,\r stands up for justice,\r He is calm under pressure.\r Help him fulfill his dreams!" = "小忍一身绿油油，\r戴着眼罩紧盯你，\r表情坚定扑克脸，\r天生卷发不用烫！\r小腿一弹刮强风，\r神秘隐身是强项，\r机灵淡定出手快，\r有正义感又坚强！";
+"Sansa is a princess,\r Loves beauty and kindness.\r Bestowed with three wands,\r She owns magic that you wants.\r One emits star powder,\r Which brings positive power.\r The other two hide mysteries,\r So it needs you to discover." = "姗姗妹妹脸红红，\r最爱躲在珊瑚中，\r眨眨眼睛很好奇，\r抛抛媚眼满天星！\r梳梳头发爱撒娇，\r半歪着头看着你，\r我是你的小伙伴，\r跟我一起玩好吗？";
+"Purpie is so cute,\r And she loves food.\r Always carry a bag,\r With magic inside.\r Anything goes in,\r Food comes out.\r No matter what appears,\r She eats with no doubt." = "胖紫是个小吃货，\r红的发紫会发亮，\r头顶两个小弯角，\r香肠嘴加小兔牙！\r什么都往肚中吞，\r从早可以吃到晚，\r缺水时候泪汪汪，\r吃饱开心转个圈！";
+
+//ConfirmPetVC.swift
+"You have selected\r%@" = "你选择的萌宠是\r%@";
+"%@ will be your partenter to explore the Gululu Universe! And you can unlock more friends when you reach Level 10 ! Ready?" = "请注意，你选择%@作为搭档开启接Gululu的旅程，当水精灵达到等级10后还可以选择更多的冒险小伙伴！准备好了么？";
+"Pet creat failed" = "萌宠创建失败";
+
+//FinishPetSelectVC.swift
+"has got her pet, and it’s time to add a Gululu for her!" = "已经拥有了自己的萌宠，快来帮她添加一个 Gululu 吧!";
+"has got his pet, and it’s time to add a Gululu for him!" = "已经拥有了自己的萌宠，快来帮他添加一个 Gululu 吧!";
+"Child update failed" = "小孩信息更新失败";
+"Great" = "太好了!";
+
+//IntroducSMVC.swift
+"Introducing School Mode" = "关于上课时间";
+"To help your child concentrating class, you can set Gululu to school mode. It will be silent and not interact with your child within the set period of time." = "开启上课时间，可以让 Gululu 在设定的时段内保持静音，让孩子安心学习。";
+"Never\rmind" = "不必了";
+
+//MainVC.swift
+"Child's Name" = "TA的名字";
+"Coming soon..." = "即将到来...";
+"Your pet’s paradise is still under construction. You’ll be able to see it within next few weeks. :)" = "宠物乐园仍在加紧建设之中，再过几周就能看到啦！：）";
+
+//LockedVC.swift
+"To access, tap the numbers in numerical order:" = "为确保您是家长，请按从小到大的顺序点按下面的数字:";
+
+//MainPet.swift
+"Let %@\rchoose a new pet!" = "快让%@\r来选新的萌宠!";
+"Sync your Gululu to\rwelcome %@!" = "同步 Gululu,\r迎接%@的到来!";
+"Wow! Goal achieved!" = "哇！目标达成！";
+"Now, you can let %@\rrestart with a new pet!" = "现在，你可以让%@\r换只宠物再玩一次哦!";
+"Congratulations, %@ has\rfinished the journey!" = "恭喜，%@的旅程\r已经到达终点!";
+"Look, %@ is coming now!\rI'll see you later!" = "瞧, %@已经来啦!\r咱们以后再见吧!";
+"Tap to add a bottle!" = "点击添加 Gululu！";
+
+//MianNetWork.swift
+"Update" = "立即更新";
+"Get friend Failed" = "获取朋友失败";
+"Not now" = "以后再说";
+"%d of %@ ml" = "%d / %@ 毫升";
+"%d of %d oz" = "%d / %d 盎司";
+
+//NonFriendVC.swift
+"The friend list will be sync to Gululu after you put it back to dock." = "将Gululu放在充电座上，好友列表才能同步到水杯端。";
+"Oops! You haven’t added any friends yet. Give Gululu a shake with friends nearby, there will be a surprise!" = "啊哦，还没有加过好友哦…和周围的小伙伴同时摇动 Gululu，就可以加为好友啦!";
+"Me" = "我";
+"My Friends" = "我的朋友";
+"Add Friend" = "添加好友";
+"Enter phone number or parent's email" = "输入对方手机号或邮箱";
+"Search friends" = "搜索好友";
+"The account does not exist, please enter the correct account!" = "該賬號不存在，請輸入正確的賬號！";
+"Search Results" = "搜索结果";
+"Added" = "已添加";
+"Add" = "添加";
+"Sent" = "已发送";
+"Friend request has been sent" = "好友请求已发送";
+"Search failed" = "搜索失败";
+"add failed" = "添加失败";
+"You can not add yourself as a friend" = "你不能添加自己为好友";
+"Account %@ has %d child, fast add them as friend" = "账号 %@ 拥有 %d 个小伙伴, 快加他们为好友吧";
+"%@\rwants to be your friend" = "%@\r想成为你的好友";
+"%@\rRejected your request" = "%@\r拒绝了你的好友申请";
+"Got it" = "知道了";
+"Pull down to refresh" = "下拉刷新";
+
+
+//AlterChildInfoVC.swift
+"%@'s daily water intake target:\r%d %@" = "%@的每天喝水目标是:\r%d %@";
+"%@'s daily water intake target:" = "%@的每天喝水目标是:";
+"Disconnect bottle %@?" = "断开与 Gululu %@ 的连接吗?";
+"After disconnection, you can connect the bottle with other child. But all the data and gaming progress will still be kept under %@'s profile" = "断开连接后，你可以将此 Gululu 连接到其他账户。请放心，%@的饮水和游戏数据仍会保留。";
+"Remove %@?" = "确认移除%@吗?";
+"Removing a child will erase the child's profile and data. Please be aware that this action CANNOT be restored." = "移除之后，孩子的所有资料和数据都将被清空。请注意，移除操作是无法撤销的。";
+"ATTENTION: %@ has a connected bottle. Removing %@ needs you to disconnect the bottle first." = "请注意，移除前需要先断开与%@的 Gululu 的连接。";
+"You're about to remove %@ from your account. Please click confirm to proceed." = "即将移除%@。请点击下方的确认按钮，执行移除操作。";
+"%@ has been removed from your account." = "已经将%@从账户中移除。";
+"Remove succeeded" = "移除成功";
+"Remove failed" = "移除失败";
+"Unable to remove %@. Please try again later." = "无法移除%@，请稍后再试。";
+"Remove" = "移除";
+"Disconnection failed" = "断开连接失败";
+"Unable to disconnect the bottle. Please try again later." = "无法断开连接，请稍后再试。";
+
+//BHMaskView.swift
+"Tap to add a bottle!" = "点击添加 Gululu！";
+
+//Setting
+"Parent's account" = "你的账户";
+"Wifi Connection" = "Wi-Fi 设置";
+"Your Account" = "你的账户";
+"Profile" = "个人资料";
+"Tutorial" = "玩法说明";
+"Help" = "帮助";
+"Bottle Settings" = "水杯设置";
+"No Gululu connected" = "尚未连接水杯";
+"There's no bottle connected to %@. You can add one on the home screen" = "%@的账户尚未连接水杯。你可以在主屏添加一个新的水杯。";
+
+//SetSchoolModelVC.swift
+"School Mode" = "上课时间";
+"School mode will take effect" = "课堂模式的生效时间只在";
+"%@'s \rSchool Mode" = "%@的 \r上课时间";
+"%@'s School Mode" = "%@的 上课时间";
+"Get school time error" = "上课时间获取失败";
+"When school mode is on, Gululu will be silent and not interact with your child within the set period of time." = "上课时间开启后，Gululu 会在设定的时段内保持静音，让孩子安心学习。";
+"School mode will take effect\r\nONLY ON WEEKDAYS." = "上课时间只在上学日 (周一到周五) 生效。";
+
+//SetBedModeVC.swift
+"Bedtime" = "睡眠时间";
+"%@'s \rBedtime" = "%@的 \r睡眠时间";
+"%@'s Bedtime" = "%@的 睡眠时间";
+"Wake up" = "起床时间";
+"Pet will fall asleep after bedtime, in order to help your child form healthy sleep habits." = "杯中萌宠将在设定的时间入睡，既不打扰孩子休息，又鼓励TA早睡早起。";
+"Pet will not play with your child within the set period of time." = "萌宠将在设定的时间进入梦乡…";
+"Get sleep time error" = "睡眠时间获取失败";
+
+//AboutViewController.swift
+"About Gululu" = "关于 Gululu";
+"Latest version" = "已经是最新版本";
+"%@ is available" = "可升级至 v%@";
+"Power on your Gululu,then keep it on the charger with Wi-Fi connected.Gululu will upgrade automactically!" = "启动 Gululu，然后将其置于充电座上，保持网络通畅，Gululu 就会自动开始升级啦！";
+"Game" = "游戏";
+"Firmware" = "系统";
+"Network" = "通讯模块";
+
+//ParentAccountVC.swift
+"Log\rout" = "登出";
+
+//SyncTimeAlterView.swift
+"One more step:" = "还差一步:";
+"Please put your Gululu on the charging dock, and wait for the data sync to finish." = "请把 Gululu 放在充电座上，等待完成同步。";
+"Please put your Gululu on the charging dock, \rand wait for the data sync to finish." = "请把 Gululu 放在充电座上，等待完成同步。";
+
+//WelcomeVC.swift
+"%@ will come to Gululu after rebooting!" = "%@会在重启后进入 Gululu!";
+
+//SSIDSetupVC.swift
+"Connect to home Wi-Fi" = "连接家里的 Wi-Fi";
+"Wi-Fi network compatibility" = "查看不支持的 Wi-Fi 网络";
+"How to switch Wi-Fi?" = "如何切换 Wi-Fi?";
+"Got it" = "知道了";
+"Enter wifi password" = "输入 Wi-Fi 密码";
+"Incompatible Wi-Fi networks" = "查看不支持的 Wi-Fi 网络";
+"5GHz Wi-Fi is not supported" = "尚不支持 5GHz Wi-Fi 网络";
+"- 5GHz Wi-Fi network\r\n- Hidden Wi-Fi network\r\n- Wi-Fi network that require captive portal authentication" = "- 5GHz Wi-Fi 网络\r\n- 隐藏的 Wi-Fi 网络\r\n- 需要认证或登录的网络";
+"Based on the Wi-Fi name, you might be connecting to an unsupported 5GHz Wi-Fi. Would you like to continue?" = "从 Wi-Fi 名称来看，你选择的可能是我们尚未支持的 5GHz Wi-Fi 网络。仍要继续吗?";
+"Based on the Wi-Fi name, you might have selected an unsupported 5GHz Wi-Fi. Please select a 2.4GHz Wi-Fi instead." = "从 Wi-Fi 名称来看，你所选择的可能是我们尚未支持的 5GHz Wi-Fi 网络。请换用 2.4GHz Wi-Fi 网络。";
+"set time zone error" = "时区设置错误";
+"It is not a home Wi-Fi" = "当前连接的并非家庭 Wi-Fi";
+"Please connect to your home Wi-Fi first. The Wi-Fi name and password will be used to grant Gululu access to the Internet." = "请先连接家里的 Wi-Fi。输入的 Wi-Fi 名称和密码将用来帮助 Gululu 连接家庭网络。";
+"Are you sure about connecting to this wifi without a password?" = "确定连接的 Wi-Fi 不需要密码吗？";
+
+//WifiStationConnectVC.swift
+"Connect to home wifi" = "连接家里的 Wi-Fi";
+"Please connect to your home wifi to continue set up" = "请先连接家里的 Wi-Fi，再继续设置。";
+"Choose your home Wi-Fi" = "为Gululu连接Wi-Fi";
+
+"Step ①: Choose your home Wi-Fi" = "第①步: 为Gululu连接Wi-Fi";
+"Step ②: Power on your Gululu" = "第②步: 启动你的Gululu";
+"Step ③: Connect to your Gululu" = "第③步: Gululu与手机连接";
+
+
+//ConectingVerfyVC.swift
+"Connect Gululu" = "连接 Gululu";
+"Power on your Gululu" = "启动你的 Gululu";
+"Now, switch your wifi connection to the\r one that matches your Gululu’s ID" = "在手机无线局域网设置里\r\n连上U开头的Wi-Fi";
+"Press it again to show your Gululu's ID\r and stay on this page" = "再按一次主按钮，\r\n显示GululuID，水杯停留在该页面";
+"Then, long press the main button\r to enter the menu" = "长按主按键进入菜单";
+"Check if the pet appears\r on Gululu’s screen" = "确认萌宠是否出现在屏幕上";
+"Press and hold the main button\r until the screen lights up" = "按住主按键直至点亮屏幕";
+"Without connection to Gululu, your child’s water drinking behavior won’t be recorded. You can still do it in the app sometime later." = "如果不连接 Gululu，孩子的饮水行为将无法被记录。你也可以之后再尝试连接。";
+"Please input the ID shows in your Gululu" = "在下方输入框中输入Gululu屏幕上出现的水杯编号中的后4位字符";
+"Didn't find your Gululu. Please check the ID and keep your Gululu shows the ID screen." = "未找到该水杯，请确认水杯id并让水杯停留在显示id的界面";
+"Pair_iOS10_tips" = "请手动打开手机的设置 - 无线局域网，并连上上与Gululu水杯ID名称相同的Wi-Fi，连上后请返回Gululu App。";
+
+
+//WifiErrorVC.swift
+"You might be connecting to an unsupported 5GHz or hidden Wi-Fi network. Please change to a visible 2.4GHz Wi-Fi and try again." = "你之前选择的可能是我们尚未支持的 5GHz Wi-Fi 网络。请换用 2.4GHz Wi-Fi 网络，然后再试一次。";
+"The Wi-Fi password you entered might be incorrect. Please double check the password and try again." = "输入的 Wi-Fi 密码可能有误。请重新输入密码，然后再试一次。";
+"Your Wi-Fi connection might be unstable, or the Wi-Fi signals around are too crowded. Please try again." = "当前 Wi-Fi 连接可能不够稳定，或者周边的 Wi-Fi 环境太过复杂。请再试一次。";
+"Pair_not_connect_wifi_tite" = "水杯未连上路由器";
+"Pair_not_connect_service_title" = "水杯未连上服务器";
+"Pair_not_connect_wifi_tips" = "可能的原因：\r\n1. 输入的Wi-Fi密码可能有误——请确认密码并重试 \r\n2. 水杯离路由器较远——请让水杯尽量靠近您的Wi-Fi路由器 \r\n3. 您正在使用的是5G的Wi-Fi——请使用2.4G Wi-Fi";
+"Pair_not_connect_service_tips" = "可能的原因：\r\n1. 网络不稳定——请确认您的网络状态并重试\r\n2. Gululu的服务器在维护中，请稍等片刻重试";
+
+//ConnectingCupVC.swift
+"Connection failed :(" = "连接失败 :(";
+"Confirming\r\nconnection result..." = "正在确认\r\n连接结果...";
+"The Wi-Fi passwords have been sent successfully,\rPlease check the setting result on your Gululu." = "Wi-Fi密码已发送成功！\r请在水杯上检查Wi-Fi更新结果。";
+"Confirming\r\nconnection result..." = "正在确认\r\n连接结果...";
+"Successfully\r\nconnected!" = "连接成功!";
+"Still trying, may take\r\nup to 2 mins..." = "仍在尝试，最多\r\n可能需要2分钟...";
+"Abort connecting?" = "放弃连接?";
+"Without connection to Gululu, your child’s water drinking behavior won’t be recorded. You can still do it in the app sometime later." = "如果不连接 Gululu，孩子的饮水行为将无法被记录。你也可以之后再尝试连接。";
+"Connecting to Gululu..." = "连接 Gululu...";
+"Connection failed :(" = "连接失败 :(";
+"Update child data failed" = "小孩数据更新失败";
+"Abort connecting?" = "放弃连接?";
+"Please make sure your Gululu is on the ID screen and close to your mobile device." = "请确保 Gululu 停留在ID画面，并且靠近你的手机。";
+"Please double check your internet connection and try again." = "请检查你的网络连接，然后重试。";
+"Oops, service error occured :(" = "糟糕，服务出错了 :(";
+"We’re trying to fix it ASAP. Please come back later and try again." = "我们会尽快恢复服务。请稍后再试。";
+"Please double check the wifi name and password you entered, and make sure the wifi connection is stable." = "请再次确认输入的 Wi-Fi 密码，并确保所选的 Wi-Fi 连接足够稳定。";
+"Each bottle can only be connected to one account. Please select another one and try again." = "你所选择的 Gululu 已经关联到其他账户。请选择一个未被关联的 Gululu，然后再试一次。";
+
+//ConnectTimeOutVC.swift
+"I didn’t get these icons." = "没有出现以上标识？";
+"Please select the error icon you got on the bottle screen:" = "请选择你在 Gululu 屏幕上看到的错误标识:";
+
+//Upgrade
+"JUST ONE\nSTEP AWAY!" = "只差一步,\n快去同步!";
+"READY TO\nUPGRADE!" = "一切就绪,\n立即升级!";
+"UPGRADE\nAVAILABLE!" = "新版来啦,\n快升级吧!";
+"ALL DONE,\nSTART NEW ADVENTURE!" = "升级完成,\n开始新的冒险!";
+"UPGRADE" = "我要升级";
+"CHOOSE NEW PET" = "选择新宠物";
+"GOT IT" = "知道了";
+"DONE" = "完成";
+"DOWN-\nLOADING..." = "正在下载\n升级包...";
+
+    //1
+"3D Pets" = "全新 3D 宠物形象";
+"All pets and animations are becoming 3D now!" = "所有宠物和动画均升级 3D，颜值翻番，可爱加倍！";
+    //2
+"New Adventures" = "全新冒险之旅";
+"New adventures and creative game play!" = "不同以往的全新玩法，超乎想象的冒险场景！";
+"The new game play introduces more intuitive feedback and rewards for water drinking!" = "全新玩法，用更直观的喝水反馈、更丰富的道具奖励，为小朋友们增添新的喝水动力！";
+    //3
+"More Treasures" = "更丰富的宝藏奖励";
+"Treasure hunting has been immensely improved!" = "最具吸引力的宝藏奖励，全面升级！";
+"Much more undersea creatures, fantastic plants, and decorations for your pet!" = "告别单调的植物升级，全新海底生物、奇幻植物、宠物装扮等着你！要多喝水才能得到它们哦：）";
+    //4
+"How to upgrade?" = "如何升级？";
+"Simple guides for you to upgrade your Gululu!" = "告诉你如何将 Gululu 轻松升级到全新玩法！";
+"Power on your Gululu, then keep it on the charger for 4~6 hours with Wi-Fi connected. Gululu will download the upgrade patch all by itself! You’ll be informed in the App once it’s ready to upgrade." = "启动 Gululu，然后将其置于充电座上，并保持网络通畅。4~6 小时后它就会自动下载完成升级包。到时候你将会在 App 中收到通知，然后完成升级。";
+    //5
+"Your pet & progress" = "你目前的宠物和进度";
+"will be archived in “My Pets”." = "将会保存在“我的宠物”之中，之后随时都能查看。";
+"won’t appear in the new game. But you can still find your pet and plants in “My Pets”." = "将不会在新版游戏中出现。但你仍然可以在“我的宠物”中看到之前的宠物和收集到的植物。";
+    //6
+"Sync your Gululu" = "同步你的 Gululu";
+"Sync your Gululu to enjoy the new adventures!" = "同步 Gululu，迎接属于你的全新冒险之旅！";
+"Put your Gululu on the charger, and it’ll restart after syncing. Get ready to enjoy the new adventures with your new pet!" = "将 Gululu 放置在充电座上，它会在同步成功之后自动重启。准备好与你的全新萌宠一起，迎接冒险之旅吧！";
+    //7
+"Downloading…" = "正在下载升级包...";
+"Your Gululu is downloading the upgrade patch now." = "你的 Gululu 正在下载升级所需要的安装包。";
+"Your Gululu is downloading the upgrade patch now. It will take 4~6 hours or even longer. You’ll be informed in the App once it’s done." = "你的 Gululu 正在下载升级所需的安装包。这大概需要 4~6 小时，或者更长的时间。下载完成后，你将会在 App 中收到通知。";
+
+//CupCenterVC
+"Change Wi-Fi settings" = "修改 Wi-Fi 设置";
+"Data synced: %@ ago" = "数据同步：%@之前";
+"Everything goes well. Data sync normally happens every 30 mins with Wi-Fi connected." = "水杯连接正常。处于 Wi-Fi 环境中时，数据同步一般每30分钟进行一次。";
+"To recover the connection, you can try:\n1. Power on your Gululu bottle and ensure a stable Wi-Fi connection.\n2. Click \"Change Wi-Fi settings\" to reset Wi-Fi.\n3. Contact us via customer-service@bowhead-tech.com." = "水杯网络连接暂时中断。若要恢复连接，请尝试以下方法：\n1. 让水杯处于开机状态，并处于Wi-Fi环境中\n2. 点击“修改Wi-Fi设置”按钮重新连接当前Wi-Fi\n3. 如果一直无法让水杯重连Wi-Fi，请联系客服\n热线电话：400-820-3195\n客服邮箱：customer-service@bowhead-tech.com";
+
+"Confirm to synchronize the time of bottle to your phone clock?" = "确认将水杯的时间同步为手机的当前时间？";
+
+"Sync" = "同步";
+"min" = "分钟";
+"mins" = "分钟";
+"hr" = "小时";
+"hrs" = "小时";
+"day" = "天";
+"days" = "天";
+"'s" = "的";
+
+//TutorialVC
+"    Hi, %@! \r\n    Did you know..." = "    Hi, %@! \r\n    你是否知道...";
+
+//PetParadiseVC
+"Add pet failed" = "添加宠物失败";
+"Switch \r Pet" = "更换 \r宠物";
+"Unlock" = "解锁";
+"Change pet failed, Pleast try again later" = "更换宠物失败，请稍后重试";
+"Pair cup, Please!" = "请配对！";
+"The game version of your Gululu is out of date, please put it in the charging dock to update the new features." = "您的水杯还未更新，目前不能选择逗泥哟~请先将水杯放到充电座上升级到最新版本吧！";
+
+//main_share_score
+"score" = "分";
+"We miss you badly, come back and drink." = "这就有点尴尬了，敢不敢喝一口……";
+"You beat %d %% of the other Gululu users! Every single sip matters for the Gululu uninverse." = "本宝宝的喝水习惯超过了 %d %% 的小伙伴啦！我的一小口，可是人类的一大口！";
+"Well done! You beat %d %% of the other Gululu users from all over the world! Keep drinking and keep healthy!" = "超过了全球 %d %% 的小伙伴！棒棒的！人家可爱喝水了！教练，我要喝水！！";
+"Super fan of Gululu? Ah-ha, You beat %d %% of the other Gululu users, are you ready for new challenges?" = "我是超级喝水小盆宇！打败了 %d %% 的小伙伴！你敢不敢来挑战？";
+"You beat %d %% of the other Gululu users! Mommy will never be worried about your water drinking!" = "打败了全球 %d %% 的小伙伴！妈妈再也不用担心我的喝水！";
+"Wow amazing job drinking water and using Gululu! Drinking water is something fabulous in your life!!" = "100分？无敌是多么的寂寞……";
+"Saved successfully!" = "保存成功!";
+"Share failed!" = "分享失败!";
+"Share success!" = "分享成功!";
+
+//pet_story
+"The world is unlocked, keep drinking water to unlock more interesting stories." = "这个世界还未解锁，继续喝水可以解锁更多有趣故事哦!";
+"This creature is unlocked, keep drinking water to unlock more interesting stories." = "这个小生物还未解锁，继续喝水可以解锁更多有趣故事哦!";
+"Coming soon！" = "声音正在紧张制作中，敬请期待！";
+

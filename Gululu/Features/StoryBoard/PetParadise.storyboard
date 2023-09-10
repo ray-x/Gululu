@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Aller_Rg.ttf">
+            <string>Aller</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Select Pet In ParaVC-->
+        <scene sceneID="9Fk-RN-PeI">
+            <objects>
+                <viewController storyboardIdentifier="SelectPetInPara" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YdO-eh-oaB" customClass="SelectPetInParaVC" customModule="Gululu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dpU-Ff-ifa"/>
+                        <viewControllerLayoutGuide type="bottom" id="UR6-GO-c2W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dp8-PW-DhX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LE5-sb-T6E">
+                                <rect key="frame" x="323" y="28" width="36" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="36" id="5NL-yX-657"/>
+                                    <constraint firstAttribute="height" constant="36" id="Kh4-xk-zvB"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="close"/>
+                                <connections>
+                                    <action selector="back:" destination="YdO-eh-oaB" eventType="touchUpInside" id="PeO-q4-cSa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="LE5-sb-T6E" secondAttribute="trailing" id="8Iy-3G-HPu"/>
+                            <constraint firstItem="LE5-sb-T6E" firstAttribute="top" secondItem="dpU-Ff-ifa" secondAttribute="bottom" constant="8" id="HB6-eV-se1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="d3H-EM-0hJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="pet_story_play_sign" destination="TPP-y0-1mv" id="I7J-6I-Upz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o3a-21-KMv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4910" y="348"/>
+        </scene>
+        <!--Pet StoryVC-->
+        <scene sceneID="faA-ay-yDb">
+            <objects>
+                <viewController storyboardIdentifier="petStory" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ja6-Qu-Fps" customClass="PetStoryVC" customModule="Gululu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dGp-nv-NrW"/>
+                        <viewControllerLayoutGuide type="bottom" id="VaY-8v-LBh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NcB-rJ-bZr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pet_story_bg" translatesAutoresizingMaskIntoConstraints="NO" id="mww-YP-4Hr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAI-Re-sTq">
+                                <rect key="frame" x="323" y="20" width="36" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="Ret-ap-QgR"/>
+                                    <constraint firstAttribute="width" constant="36" id="fJC-Tn-u6j"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="close"/>
+                                <connections>
+                                    <action selector="back:" destination="Ja6-Qu-Fps" eventType="touchUpInside" id="ZMH-dT-hqJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="mww-YP-4Hr" secondAttribute="trailing" id="0Rf-ef-5w9"/>
+                            <constraint firstItem="mww-YP-4Hr" firstAttribute="top" secondItem="NcB-rJ-bZr" secondAttribute="top" id="UdL-Za-jcD"/>
+                            <constraint firstItem="mww-YP-4Hr" firstAttribute="top" secondItem="lAI-Re-sTq" secondAttribute="bottom" constant="-56" id="ehC-Cj-M3C"/>
+                            <constraint firstItem="mww-YP-4Hr" firstAttribute="leading" secondItem="NcB-rJ-bZr" secondAttribute="leading" id="gR9-Gi-7S8"/>
+                            <constraint firstItem="lAI-Re-sTq" firstAttribute="leading" secondItem="mww-YP-4Hr" secondAttribute="trailing" constant="-52" id="vpW-ft-ysm"/>
+                            <constraint firstAttribute="bottom" secondItem="mww-YP-4Hr" secondAttribute="bottom" id="y1d-wn-2pz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CT3-2l-eeU"/>
+                    </view>
+                    <connections>
+                        <outlet property="bg" destination="mww-YP-4Hr" id="TxN-QH-uU2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yDi-UM-gxA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5567" y="348"/>
+        </scene>
+        <!--Pet Story Alter View-->
+        <scene sceneID="lPT-3s-4dX">
+            <objects>
+                <viewController storyboardIdentifier="pet_story_alter_view" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RSa-8n-jnt" customClass="PetStoryAlterView" customModule="Gululu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fsJ-05-DKY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.7520066352739726" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="cVv-da-CVB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QCQ-NF-PdN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6237.6000000000004" y="347.67616191904051"/>
+        </scene>
+        <!--Pet ParadiseVC-->
+        <scene sceneID="jI7-Vr-BR8">
+            <objects>
+                <viewController storyboardIdentifier="PetParadise" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9gn-H5-ULh" customClass="PetParadiseVC" customModule="Gululu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oKv-oq-hUg"/>
+                        <viewControllerLayoutGuide type="bottom" id="W8q-7x-ZmW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FF0-Fl-9vs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zcj-Q0-mOU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKL-hw-Hqy">
+                                <rect key="frame" x="80" y="-20" width="215" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="bU2-jC-FRk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Aller" family="Aller" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJj-Ri-eFO">
+                                <rect key="frame" x="295" y="0.0" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="HfR-xl-Atr"/>
+                                    <constraint firstAttribute="width" constant="80" id="zIn-EI-UnE"/>
+                                </constraints>
+                                <state key="normal" image="close"/>
+                                <connections>
+                                    <action selector="back:" destination="9gn-H5-ULh" eventType="touchUpInside" id="6iB-b3-CeO"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pet_story_play_btn_bg" translatesAutoresizingMaskIntoConstraints="NO" id="T6L-dw-kny" customClass="FLAnimatedImageView">
+                                <rect key="frame" x="291" y="522.5" width="74" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="T6L-dw-kny" secondAttribute="height" multiplier="10:9" id="9Pr-dI-GPy"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="xuO-wr-7zj">
+                                <rect key="frame" x="291" y="599" width="74" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="Xz3-dN-g24"/>
+                                    <constraint firstAttribute="width" constant="74" id="tQq-5w-U7L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Aller" family="Aller" pointSize="14"/>
+                                <state key="normal" backgroundImage="green_button_right"/>
+                                <connections>
+                                    <action selector="switch_pet_model:" destination="9gn-H5-ULh" eventType="touchUpInside" id="W6e-VH-syB"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pet_story_play_btn" translatesAutoresizingMaskIntoConstraints="NO" id="TPP-y0-1mv" customClass="FLAnimatedImageView">
+                                <rect key="frame" x="291" y="522" width="74" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="TPP-y0-1mv" secondAttribute="height" multiplier="10:9" id="dR0-Cr-9o6"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="uKL-hw-Hqy" secondAttribute="trailing" constant="80" id="2Tj-w4-Ti9"/>
+                            <constraint firstItem="W8q-7x-ZmW" firstAttribute="top" secondItem="xuO-wr-7zj" secondAttribute="bottom" constant="10" id="8GC-CV-nzz"/>
+                            <constraint firstAttribute="trailing" secondItem="rJj-Ri-eFO" secondAttribute="trailing" id="8rO-eh-lV6"/>
+                            <constraint firstItem="uKL-hw-Hqy" firstAttribute="leading" secondItem="FF0-Fl-9vs" secondAttribute="leading" constant="80" id="9Mg-Dj-04N"/>
+                            <constraint firstAttribute="bottom" secondItem="Zcj-Q0-mOU" secondAttribute="bottom" id="CZs-9K-4Aa"/>
+                            <constraint firstItem="xuO-wr-7zj" firstAttribute="top" secondItem="TPP-y0-1mv" secondAttribute="bottom" constant="10" id="HYT-1x-gO3"/>
+                            <constraint firstItem="Zcj-Q0-mOU" firstAttribute="leading" secondItem="FF0-Fl-9vs" secondAttribute="leading" id="TPE-EA-fCv"/>
+                            <constraint firstItem="uKL-hw-Hqy" firstAttribute="top" secondItem="FF0-Fl-9vs" secondAttribute="top" constant="-20" id="WGq-nK-qpA"/>
+                            <constraint firstItem="Zcj-Q0-mOU" firstAttribute="top" secondItem="FF0-Fl-9vs" secondAttribute="top" id="Wac-1U-DTE"/>
+                            <constraint firstItem="TPP-y0-1mv" firstAttribute="width" secondItem="xuO-wr-7zj" secondAttribute="width" id="XFJ-zV-m3w"/>
+                            <constraint firstItem="TPP-y0-1mv" firstAttribute="centerX" secondItem="xuO-wr-7zj" secondAttribute="centerX" id="ag8-aQ-Qit"/>
+                            <constraint firstItem="T6L-dw-kny" firstAttribute="width" secondItem="T6L-dw-kny" secondAttribute="height" multiplier="10:9" id="dEp-zF-hv9"/>
+                            <constraint firstItem="T6L-dw-kny" firstAttribute="width" secondItem="TPP-y0-1mv" secondAttribute="width" id="fie-pa-xAD"/>
+                            <constraint firstItem="T6L-dw-kny" firstAttribute="centerX" secondItem="TPP-y0-1mv" secondAttribute="centerX" id="g8b-Zy-3l3"/>
+                            <constraint firstAttribute="trailing" secondItem="xuO-wr-7zj" secondAttribute="trailing" constant="10" id="hQM-Yp-qPm"/>
+                            <constraint firstAttribute="trailing" secondItem="Zcj-Q0-mOU" secondAttribute="trailing" id="kCb-Me-kCJ"/>
+                            <constraint firstItem="rJj-Ri-eFO" firstAttribute="top" secondItem="FF0-Fl-9vs" secondAttribute="top" id="l6w-XU-PVc"/>
+                            <constraint firstItem="T6L-dw-kny" firstAttribute="centerY" secondItem="TPP-y0-1mv" secondAttribute="centerY" id="n2y-3n-fdb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rJF-3s-6SG"/>
+                    </view>
+                    <connections>
+                        <outlet property="PetScrollView" destination="Zcj-Q0-mOU" id="AHo-A5-Qh1"/>
+                        <outlet property="backButton" destination="rJj-Ri-eFO" id="eFq-KS-8bD"/>
+                        <outlet property="banner" destination="uKL-hw-Hqy" id="fNs-cs-RH7"/>
+                        <outlet property="bannerHeight" destination="bU2-jC-FRk" id="TcC-l5-Q0j"/>
+                        <outlet property="change_pet_switch" destination="xuO-wr-7zj" id="kHX-uw-A8U"/>
+                        <outlet property="pet_story_play_sign" destination="TPP-y0-1mv" id="gn7-C8-gV9"/>
+                        <outlet property="pet_story_play_sign_bg" destination="T6L-dw-kny" id="lpl-Gz-Wen"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hS2-hn-eYg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4237.6000000000004" y="347.67616191904051"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="close" width="36" height="36"/>
+        <image name="green_button_right" width="117" height="99"/>
+        <image name="pet_story_bg" width="667" height="375"/>
+        <image name="pet_story_play_btn" width="47" height="42"/>
+        <image name="pet_story_play_btn_bg" width="47" height="42"/>
+    </resources>
+</document>

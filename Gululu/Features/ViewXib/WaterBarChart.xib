@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Aller_Bd.ttf">
+            <string>Aller-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WaterBarChart" customModule="Gululu" customModuleProvider="target">
+            <connections>
+                <outlet property="dayButton" destination="cLe-eb-2Di" id="CrP-DA-54H"/>
+                <outlet property="waterBarView" destination="yKf-6u-Eij" id="RDD-Qz-9Bf"/>
+                <outlet property="weekButton" destination="pzq-YM-MVG" id="kd4-rJ-xDL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 279 Copy" translatesAutoresizingMaskIntoConstraints="NO" id="T3j-6u-YAC">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="480"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLe-eb-2Di">
+                    <rect key="frame" x="142" y="45.5" width="133" height="69"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="cLe-eb-2Di" secondAttribute="height" multiplier="83:43" id="72n-nR-Lfm"/>
+                        <constraint firstAttribute="width" constant="68" id="qlF-tm-OJt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Aller-Bold" family="Aller" pointSize="18"/>
+                    <state key="normal" title="Today" backgroundImage="buttonDayWM">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="qlF-tm-OJt"/>
+                        </mask>
+                    </variation>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzq-YM-MVG">
+                    <rect key="frame" x="326.5" y="45.5" width="133" height="69"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="68" id="Nz7-x9-wK5"/>
+                        <constraint firstAttribute="width" secondItem="pzq-YM-MVG" secondAttribute="height" multiplier="83:43" id="WWJ-Wd-kJS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Aller-Bold" family="Aller" pointSize="18"/>
+                    <state key="normal" title="7 Days" backgroundImage="buttonDayWM">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Nz7-x9-wK5"/>
+                        </mask>
+                    </variation>
+                </button>
+                <view tag="1010" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yKf-6u-Eij" customClass="BarChartView" customModule="Gululu" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="149" width="600" height="336"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="T3j-6u-YAC" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="53z-fO-CT6"/>
+                <constraint firstItem="T3j-6u-YAC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="DBf-kW-oMy"/>
+                <constraint firstItem="pzq-YM-MVG" firstAttribute="top" secondItem="cLe-eb-2Di" secondAttribute="top" id="G3c-7g-gv7"/>
+                <constraint firstItem="cLe-eb-2Di" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="83:375" id="GZq-pe-z9A"/>
+                <constraint firstItem="cLe-eb-2Di" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" multiplier="130:187" id="HhV-qL-wSH"/>
+                <constraint firstItem="yKf-6u-Eij" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="P1J-Fh-h7Z"/>
+                <constraint firstItem="yKf-6u-Eij" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="UsZ-MC-GUD"/>
+                <constraint firstItem="T3j-6u-YAC" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="XWl-h0-TfY"/>
+                <constraint firstItem="cLe-eb-2Di" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="1:3" id="ZPy-ay-dbb"/>
+                <constraint firstItem="T3j-6u-YAC" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="cXJ-mN-Zmm"/>
+                <constraint firstItem="pzq-YM-MVG" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="83:375" id="gZW-zo-9oE"/>
+                <constraint firstItem="pzq-YM-MVG" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" multiplier="245:187" id="iRO-Im-xd4"/>
+                <constraint firstAttribute="bottom" secondItem="yKf-6u-Eij" secondAttribute="bottom" constant="-5" id="jDe-2z-4Yk"/>
+                <constraint firstItem="yKf-6u-Eij" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.7" id="zMZ-aP-Zid"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-74" y="41"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Rectangle 279 Copy" width="375" height="304"/>
+        <image name="buttonDayWM" width="84" height="44"/>
+    </resources>
+</document>

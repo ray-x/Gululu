@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11542" systemVersion="15F34" minimumToolsVersion="Xcode 7.0" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="Backup1" representedClassName="Backup1" syncable="YES">
+        <attribute name="b1ID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="b1p1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="b1p2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="b1p3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="b1p4" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="b1p5" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="b1p6" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="b1p7" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="Backup2" representedClassName="Backup2" syncable="YES">
+        <attribute name="b1p1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="b2ID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="b2p2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="b2p3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="b2p4" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="b2p5" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="b2p6" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="b2p7" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="Children" representedClassName=".Children" syncable="YES">
+        <attribute name="avator" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="birthday" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="childID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="childName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createdDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createTime" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="cupID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cupID2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cupID3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="friendID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="habitIdx" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="hasCup" optional="YES" attributeType="Integer 32" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="hasPet" optional="YES" attributeType="Integer 32" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="height" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="petID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recommendWater" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="unit" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weight" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="weightLbs" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="cup" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Cups" inverseName="child" inverseEntity="Cups" syncable="YES"/>
+        <relationship name="friend" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Friends" inverseName="child" inverseEntity="Friends" syncable="YES"/>
+        <relationship name="pet" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Pets" inverseName="child" inverseEntity="Pets" syncable="YES"/>
+    </entity>
+    <entity name="Cups" representedClassName=".Cups" syncable="YES">
+        <attribute name="childID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cupBoughtDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cupColor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cupID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cupMac" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cupName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cupSN" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="model" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ssid" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="child" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Children" inverseName="cup" inverseEntity="Children" syncable="YES"/>
+    </entity>
+    <entity name="DrinkData" representedClassName=".DrinkData" syncable="YES">
+        <attribute name="childID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cupID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="vol" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="child" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Children" syncable="YES"/>
+    </entity>
+    <entity name="Friends" representedClassName=".Friends" syncable="YES">
+        <attribute name="childID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cupID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="friendAvatar" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="friendBirthday" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="friendhabitIdx" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="friendHabitUpdateTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="friendID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="friendName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="friendPet" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="friendPetDepth" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="friendPetLevel" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="friendPetUpdateTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="friendPhotoUpdateTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="friendPhotoURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="friendPhotoURL2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="friendSocialNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="child" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Children" inverseName="friend" inverseEntity="Children" syncable="YES"/>
+    </entity>
+    <entity name="Login" representedClassName="Login" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="passwd" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="token" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tokenDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="userSn" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Parents" representedClassName="Parents" syncable="YES">
+        <attribute name="parentAvatar" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="parentID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parentMail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parentNickName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parentPasswd" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parentRole" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Pets" representedClassName=".Pets" syncable="YES">
+        <attribute name="childID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cupID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="petAnimation" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="petAvatar" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="petDepth" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="petDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="petID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="petLevel" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="petName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="petNum" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="petStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="petTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="child" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Children" inverseName="pet" inverseEntity="Children" syncable="YES"/>
+    </entity>
+    <entity name="SchoolTime" representedClassName=".SchoolTime" syncable="YES">
+        <attribute name="childID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createDate" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="cupID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="morningFromHr" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="morningFromMin" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="morningID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="morningToHr" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="morningToMin" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="noonFromHr" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="noonFromMin" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="noonID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="noonToHr" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="noonToMin" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="schoolModeEn" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="schoolMoningID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="schoolNoonID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="schoolRev3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="schoolRev4" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weekday" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="child" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Children" syncable="YES"/>
+    </entity>
+    <entity name="SSID" representedClassName=".SSID" syncable="YES">
+        <attribute name="passwd" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ssid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ssidRev1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wifiDescrip" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="System" representedClassName=".System" syncable="YES">
+        <attribute name="eventID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="eventNote" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="syncTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="UserInfo" representedClassName="UserInfo" syncable="YES">
+        <attribute name="childID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cupID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="finishedRegister" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="parentID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="petID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timeZone" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="userSn" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="children" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Children" syncable="YES"/>
+        <relationship name="cup" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Cups" syncable="YES"/>
+        <relationship name="parent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Parents" syncable="YES"/>
+    </entity>
+    <entity name="WakeSleep" representedClassName="WakeSleep" syncable="YES">
+        <attribute name="childID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cupID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sleepEn" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="sleepHr" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="sleepMin" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="wakeHr" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="wakeID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="wakeMin" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="weekday" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="child" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Children" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Backup1" positionX="-1323" positionY="-696" width="128" height="165"/>
+        <element name="Backup2" positionX="-1476" positionY="-696" width="128" height="165"/>
+        <element name="Children" positionX="-1424" positionY="-1944" width="128" height="420"/>
+        <element name="Cups" positionX="-1422" positionY="-2194" width="128" height="195"/>
+        <element name="DrinkData" positionX="-1242" positionY="-1962" width="128" height="120"/>
+        <element name="Friends" positionX="-1730" positionY="-1900" width="128" height="300"/>
+        <element name="Login" positionX="-1800" positionY="-2259" width="128" height="120"/>
+        <element name="Parents" positionX="-1890" positionY="-2094" width="128" height="135"/>
+        <element name="Pets" positionX="-1728" positionY="-1555" width="128" height="240"/>
+        <element name="SchoolTime" positionX="-1244" positionY="-1710" width="128" height="345"/>
+        <element name="SSID" positionX="-1253" positionY="-2121" width="128" height="105"/>
+        <element name="System" positionX="-1683" positionY="-2106" width="128" height="90"/>
+        <element name="UserInfo" positionX="-1665" positionY="-2196" width="128" height="225"/>
+        <element name="WakeSleep" positionX="-1037" positionY="-1980" width="128" height="195"/>
+    </elements>
+</model>

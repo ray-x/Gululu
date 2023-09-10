@@ -1,0 +1,5 @@
+"Pair_iOS10_tips" = "Please open the phone's settings - WLAN, and connect to the Wi-Fi with the same name as the Gululu bottle ID. Then please return to the Gululu App after connecting.";
+"Pair_not_connect_wifi_tite" = "Gululu faild to connect to Wi-Fi";
+"Pair_not_connect_service_title" = "Gululu is not connected to the server";
+"Pair_not_connect_wifi_tips" = "Possible reason: \r\n1. The entered Wi-Fi password may be incorrect - please confirm the password and try again \r\n2. The cup is far from the router - please keep the cup as close as possible to your Wi-Fi router \r\n3. You are using 5G Wi-Fi - please use 2.4G Wi-Fi";
+"Pair_not_connect_service_tips" = "Possible reason: \r\n1. Network is unstable - please confirm your network status and try again. \r\n2. The server of Gululu is in maintenance. Please wait for a moment to retry.";

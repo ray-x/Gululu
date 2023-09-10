@@ -1,0 +1,6 @@
+framework module Pods_GululuTests {
+  umbrella header "Pods-GululuTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
